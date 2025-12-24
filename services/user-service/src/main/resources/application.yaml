@@ -1,3 +1,9 @@
 spring:
   application:
     name: user-service
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            client-secret: ${COGNITO_CLIENT_SECRET}
